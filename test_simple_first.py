@@ -17,6 +17,6 @@ def test_google_successful(open_browser):
 def test_google_unsuccessful(open_browser):
     browser.element('[name="q"]').should(be.blank).type('2827366635719100').press_enter()
     browser.element('[id="result-stats"]').should(have.text('Результатов: примерно 0'))
-    print('Поиск по запросу не дал результатов')
+    print('Поиск по запросу не выдал результатов')
 
 
